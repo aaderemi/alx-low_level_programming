@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <ctype.h>
 /**
  * _islower - returns whether a character is lowercase
  * @c: input character
@@ -7,5 +7,5 @@
  */
 int _islower(int c)
 { 
-	return (islower(c));
+	return (islower(c) ? 1:0);
 }
