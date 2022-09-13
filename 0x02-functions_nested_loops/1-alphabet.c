@@ -8,6 +8,7 @@ void print_alphabet(void)
 {
 	const char alpha[27] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
+
 	for (i = 0; i < 26; ++i)
 	{
 		_putchar(alpha[i]);
