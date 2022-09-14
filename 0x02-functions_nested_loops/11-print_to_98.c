@@ -10,21 +10,23 @@
  */
 void print_to_98(int a)
 {
+	int i;
+	
 	if (a < 98)
 	{
-		for (a; a <= 98; ++a)
+		for (i = a; i <= 98; ++i)
 		{
-			printf("%d", a);
-			if (a != 98)
+			printf("%d", i);
+			if (i != 98)
 				printf("%s", ", ");
 		}
 	}
 	else if (a > 98)
 	{
-		for (a; a >= 98; --a)
+		for (i = a; i >= 98; --i)
 		{
-			printf("%d", a);
-			if (a != 98)
+			printf("%d", i);
+			if (i != 98)
 				printf("%s", ", ");
 		}
 	}
