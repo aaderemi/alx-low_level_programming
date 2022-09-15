@@ -13,7 +13,7 @@ int main(void)
 
 	n = 100;
 
-	for (j = 1; j <= 100; ++j)
+	for (j = 1; j <= n; ++j)
 	{
 		if (j % 3 == 0 && j % 5)
 			printf("Fizz");
