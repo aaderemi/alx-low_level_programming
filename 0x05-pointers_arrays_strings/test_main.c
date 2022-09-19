@@ -2,7 +2,11 @@
 #include <stdio.h>
 int main(void)
 {
-	int arr[] = {1, 30, -5, 6};
-	print_array(arr, 4);
+	char s1[98];
+	char *ptr;
+
+	ptr = _strcpy(s1, "First do it\n");
+	printf("%s", s1);
+	printf("%s", ptr);
 	return (0);
 }
