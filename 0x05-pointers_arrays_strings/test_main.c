@@ -2,12 +2,7 @@
 #include <stdio.h>
 int main(void)
 {
-
-	char str[10] = "My School";
-	char *s = "0123456789";
-
-	puts_half(str);
-	puts_half(s);
-
+	int arr[] = {1, 30, -5, 6};
+	print_array(arr, 4);
 	return (0);
 }
