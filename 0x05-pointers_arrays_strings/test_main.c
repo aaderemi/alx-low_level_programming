@@ -4,7 +4,10 @@ int main(void)
 {
 
 	char str[10] = "My School";
-	puts2(str);
+
+	printf("%s\n", str);
+	rev_string(str);
+	printf("%s\n", str);
 
 	return (0);
 }
