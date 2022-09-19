@@ -11,10 +11,8 @@ char *_strcpy(char *dest, char *src)
 {
 	char *ret = dest;
 
-	for (src; *src; ++src)
-	{
+	for (; *src; ++src)
 		*dest++ = *src;
-	}
 
 	return (ret);
 }
