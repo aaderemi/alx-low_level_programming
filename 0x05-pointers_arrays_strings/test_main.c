@@ -4,10 +4,10 @@ int main(void)
 {
 
 	char str[10] = "My School";
+	char *s = "0123456789";
 
-	printf("%s\n", str);
-	rev_string(str);
-	printf("%s\n", str);
+	puts_half(str);
+	puts_half(s);
 
 	return (0);
 }
