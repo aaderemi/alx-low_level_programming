@@ -1,6 +1,14 @@
 #include "main.h"
 #include <string.h>
 
+/**
+ * _strncat - copies n bytes from one string to another
+ * @dest: str; destination
+ * @src: str; source
+ * @n: num of bytes
+ *
+ * Return: pointer to return string
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 	int len;
