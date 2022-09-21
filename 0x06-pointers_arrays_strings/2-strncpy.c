@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * @_strncpy - copies n characters
+ * _strncpy - copies n characters
  * @dest: to dest
  * @src: from source
  * @n: num char
