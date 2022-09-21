@@ -13,7 +13,8 @@ char *_strcat(char *dest, char *src)
 	int len = strlen(dest);
 	char *endptr = dest + len;
 
-	while (*endptr++ = *src++);
+	while
+		((*endptr++ = *src++));
 
 	return (ret);
 }
