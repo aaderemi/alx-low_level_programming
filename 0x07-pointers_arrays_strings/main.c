@@ -3,16 +3,16 @@
 
 int main(void)
 {
-	char buffer[98] = {0x00};
-	int i = 0;
+	char *s = "h";
+	char *f;
 
-	_memset(buffer, 0x01, 95);
+	f = _strchr(s, '\0');
 
-	for (; i < 98; i++)
+	if (f != NULL)
 	{
-		printf("0x%02x ", buffer[i]);
+		printf("%s\n", f);
 	}
-	printf("\n");
+	
 
 	return (0);
 }
