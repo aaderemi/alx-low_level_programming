@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strpbrk - finds any character from accept in s
  * @s: strnig to search
@@ -16,7 +17,10 @@ char *_strpbrk(char *s, char *accept)
 		while (*accept)
 		{
 			if (*s == *accept)
+			{
 				ret = s;
+				return (ret);
+			}
 			accept++;
 		}
 		s++;
