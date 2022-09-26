@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strchr - find chr in string
  * @s: string s
@@ -7,7 +8,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ret;
+	char *ret = NULL;
 
 	while (*s)
 	{
