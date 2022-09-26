@@ -3,15 +3,13 @@
 
 int main(void)
 {
-	char *s = "h";
-	char *f;
+	char *s = "hello, world";
+	char *f = "oleh";
+	unsigned int n;
 
-	f = _strchr(s, '\0');
+	n = _strspn(s, f);
 
-	if (f != NULL)
-	{
-		printf("%s\n", f);
-	}
+	printf("%u\n", n);
 	
 
 	return (0);
