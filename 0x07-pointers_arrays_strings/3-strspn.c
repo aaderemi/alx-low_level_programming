@@ -1,6 +1,12 @@
 #include "main.h"
 #include <string.h>
 #include <stdio.h>
+/**
+ * _strspn - same as cs strpn
+ * @s: string
+ * @accept: string with acceptable char
+ * Return: span of accept in string s
+ */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
