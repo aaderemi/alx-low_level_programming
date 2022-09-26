@@ -8,6 +8,7 @@
 char *_strchr(char *s, char c)
 {
 	char *ret;
+
 	while (*s)
 	{
 		if (*s == c)
