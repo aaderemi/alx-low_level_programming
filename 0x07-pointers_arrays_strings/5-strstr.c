@@ -15,7 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	unsigned long int j = 0;
 
 	if (!*needle)
-		return haystack;
+		return (haystack);
 
 	while (*haystack)
 	{
