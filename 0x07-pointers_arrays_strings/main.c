@@ -3,14 +3,13 @@
 
 int main(void)
 {
-	char *s = "First, solve the problem. Then, write the code";
-	char *f = "";
-	char *t;
-
-	t = _strstr(s, f);
-
-	printf("%s\n", t);
-	
+	char board[4][2] = {
+		{'a', 'b'},
+		{'c', 'd'},
+		{'e', 'f'},
+		{'g', 'h'}
+	};
+	print_chessboard(board);
 
 	return (0);
 }
