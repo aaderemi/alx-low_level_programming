@@ -18,6 +18,7 @@ void actualfxn(char *s)
 void _puts_recursion(char *s)
 {
 	char *empty = "";
+
 	if (*s != *empty)
 		actualfxn(s);
 	putchar('\n');
