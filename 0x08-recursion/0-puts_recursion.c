@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * actualfxn - does the actual recursion
  * @s: string to be printed
  */
 void actualfxn(char *s)
 {
-	_putchar(*s++);
+	putchar(*s++);
 	if (!*s)
 		return;
 	actualfxn(s);
@@ -16,6 +17,8 @@ void actualfxn(char *s)
  */
 void _puts_recursion(char *s)
 {
-	actualfxn(s);
-	_putchar('\n');
+	char *empty = "";
+	if (*s != *empty)
+		actualfxn(s);
+	putchar('\n');
 }
