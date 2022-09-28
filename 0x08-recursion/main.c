@@ -3,6 +3,6 @@
 #include <string.h>
 int main(void)
 {
-	_puts_recursion("");
+	_print_rev_recursion("\nadeola");
 	return (0);
 }
