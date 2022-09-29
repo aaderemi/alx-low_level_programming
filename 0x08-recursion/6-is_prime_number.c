@@ -15,7 +15,7 @@ int actual_fxn(int n, int factor, int root)
 {
 
 	if (n != factor && n % factor == 0)
-		return 0;
+		return (0);
 	if (factor <= root)
 	{
 		factor++;
@@ -27,7 +27,7 @@ int actual_fxn(int n, int factor, int root)
  * sqrt_fxn - does sqrt
  * @est: init est
  * @n: num of int
- * Result: sqrt(n)
+ * Return: sqrt(n)
  */
 int sqrt_fxn(double est, int n)
 {
@@ -49,7 +49,7 @@ int _sqrt(int n)
 /**
  * is_prime_number - wrapper for is prime
  * @n: number to test
- * Result: 1 or 0
+ * Return: 1 or 0
  */
 int is_prime_number(int n)
 {
