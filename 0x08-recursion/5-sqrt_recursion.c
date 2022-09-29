@@ -9,7 +9,7 @@ int actual_fxn(double est, int n)
 		return (newest);
 	return (actual_fxn(newest, n));
 }
-
+/*
 int _pow (int base, int exp)
 {
 	int ret = 1;
@@ -51,14 +51,14 @@ int estimate(int n)
 	else
 		return (6 * _pow(10, evenpow / 2));
 }
-
+*/
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
 
-	if (actual_fxn(estimate(n), n) * actual_fxn(estimate(n), n) != n)
+	if (actual_fxn(10, n) * actual_fxn(10, n) != n)
 		return (-1);
 	else
-		return (actual_fxn(estimate(n), n));
+		return (actual_fxn(10, n));
 }
