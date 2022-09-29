@@ -3,9 +3,15 @@
 #include <string.h>
 int main(void)
 {
-	int n;
+	int r;
 
-	n = _strlen_recursion("Corbin Coleman");
-	printf("%d\n", n);
+	r = _sqrt_recursion(1);
+	printf("%d\n", r);
+	r = _sqrt_recursion(1024);
+	printf("%d\n", r);
+	r = _sqrt_recursion(17);
+	printf("%d\n", r);
+	r = _sqrt_recursion(-1);
+	printf("%d\n", r);
 	return (0);
 }
