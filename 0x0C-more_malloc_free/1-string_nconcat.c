@@ -10,18 +10,32 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int a = strlen(s1);
 
-	char *ret = malloc(a + n + 1);
 
-	if (!s2)
+	if (!s2 || !s2)
 	{
-		strcpy(ret, s1);
-		ret[a] = '\0';
+		if (s1 == NULL)
+		{
+			int a = strlen(s2);
+			char *ret = malloc(a + 1);
+
+			strcpy(ret, s2);
+			ret[a] = '\0';
+		}
+		else
+		{
+			int a = strlen(s1);
+			char *ret = malloc(a + 1);
+
+			strcpy(ret, s1);
+			ret[a] = '\0';
+		}
 	}
 	else
 	{
 		unsigned int b = strlen(s2);
+		unsigned int a = strlen(s1);
+		char *ret = malloc(a + n + 1);
 
 		if (n >= b)
 		{
