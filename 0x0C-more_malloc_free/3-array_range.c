@@ -17,5 +17,5 @@ int *array_range(int min, int max)
 		*ret = min;
 		ret++;
 	}
-	return (ret - (max - min - 1));
+	return (ret - (max - min + 1));
 }
