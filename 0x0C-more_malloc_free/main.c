@@ -5,8 +5,8 @@ int main(void)
 {
 	char *concat;
 
-	concat = string_nconcat("Best ", "", 2);
-	printf("%s\n", concat);
+	concat = _calloc(10, sizeof(char));
+	printf("0x%02x\n", *concat);
 	free(concat);
 	return (0);
 }
