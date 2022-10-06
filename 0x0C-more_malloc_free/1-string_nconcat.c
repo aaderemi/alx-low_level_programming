@@ -19,6 +19,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			int a = strlen(s2);
 
 			ret = malloc(a + 1);
+			if (!ret)
+				return (NULL);
 			strcpy(ret, s2);
 			ret[a] = '\0';
 		}
@@ -27,6 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			int a = strlen(s1);
 
 			ret = malloc(a + 1);
+			if (!ret)
+				return (NULL);
 			strcpy(ret, s1);
 			ret[a] = '\0';
 		}
@@ -37,6 +41,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		unsigned int a = strlen(s1);
 
 		ret = malloc(a + n + 1);
+		if(!ret)
+			return (NULL);
 		if (n >= b)
 		{
 			strcat(strcpy(ret, s1), s2);
