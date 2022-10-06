@@ -14,17 +14,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!s2 || !s2)
 	{
-		if (s1 == NULL)
-		{
-			int a = strlen(s2);
-
-			ret = malloc(a + 1);
-			if (!ret)
-				return (NULL);
-			strcpy(ret, s2);
-			ret[a] = '\0';
-		}
-		else
+		if (s2 == NULL)
 		{
 			int a = strlen(s1);
 
