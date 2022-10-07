@@ -12,7 +12,10 @@ int *array_range(int min, int max)
 	int *init = ret;
 
 	if (min > max || ret == NULL)
+	{
+		free(ret);
 		return (NULL);
+	}
 	for (; min <= max; min++)
 	{
 		*ret = min;
