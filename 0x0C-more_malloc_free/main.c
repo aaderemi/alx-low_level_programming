@@ -3,9 +3,9 @@
 #include <stdio.h>
 int main(void)
 {
-	char *concat;
+	int *concat;
 
-	concat = _calloc(10, sizeof(char));
+	concat = array_range(13, 10);
 	printf("0x%02x\n", *concat);
 	free(concat);
 	return (0);
