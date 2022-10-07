@@ -3,10 +3,10 @@
 #include <stdio.h>
 int main(void)
 {
-	int *concat;
+	char *concat;
 
-	concat = _calloc(5, 0);
-	printf("0x%02x\n", *concat);
+	concat = string_nconcat(NULL, NULL, 0);
+	printf("%s\n", concat);
 	free(concat);
 	return (0);
 }
