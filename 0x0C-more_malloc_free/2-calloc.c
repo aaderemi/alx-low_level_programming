@@ -9,11 +9,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ret = malloc(nmemb * size);
-
-	if (!nmemb || !size || !ret)
+	if (!nmemb || !size)
 		return (NULL);
+	{
+		void *ret = malloc(nmemb * size);
 
-	memset(ret, 0, nmemb * size);
-	return (ret);
+		if (!nmemb || !size || !ret)
+			return (NULL);
+		memset(ret, 0, nmemb * size);
+		return (ret);
+	}
 }
